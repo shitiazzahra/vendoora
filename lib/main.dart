@@ -1,4 +1,4 @@
-import 'package:e_commers/consts.dart';
+import 'package:e_commers/consts.dart'; // Pastikan textColor didefinisikan di sini
 import 'package:e_commers/ui/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,11 +17,11 @@ class FloShop extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         fontFamily: 'Muli',
-        visualDensity: VisualDensity.adaptivePlatformDensity, //biar adaptive di berbagai platform
+        visualDensity: VisualDensity.adaptivePlatformDensity,
         textTheme: const TextTheme(
-          bodyMedium: TextStyle(color: textColor),
-          bodySmall: TextStyle(color: textColor)
-        )
+          bodyMedium: TextStyle(color: textColor), // Pastikan textColor ada di consts.dart
+          bodySmall: TextStyle(color: textColor),
+        ),
       ),
       home: const SplashScreen(),
     );
